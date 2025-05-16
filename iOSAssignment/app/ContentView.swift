@@ -10,8 +10,20 @@ import SwiftUI
 struct ContentView: View {
     
     var body: some View {
-        HStack {
-            CardView()
+        
+        VStack {
+            Text("Iraniya Naynesh")
+                .font(.headline)
+            Spacer()
+            
+            CarouselView()
+            
+            Spacer()
+            
+            ForEach(0..<10) { _ in
+                Text("Iraniya Naynesh")
+                    .font(.headline)
+            }
         }
     }
 }
